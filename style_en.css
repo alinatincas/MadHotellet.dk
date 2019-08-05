@@ -1,0 +1,735 @@
+* {
+    box-sizing: border-box;    
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+html{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #FFFFFF;
+}
+body{
+    font-family: 'Droid Serif', serif;
+}
+p{
+    line-height: 200%;
+}
+/* Navigation */
+#logo {
+    width: 513px;
+    height: auto;
+    transition: all .3s ease-in-out; 
+}
+#logo:hover{
+    transform: scale(1.1);
+}
+#menu{
+    font-size: 36px;
+    font-family: 'Fjalla One', sans-serif; 
+    font-weight: 600;
+}
+#uk-flag{
+    width: auto;
+    height: 45px;
+}
+#danish-flag{
+    width: auto;
+    height: 45px;
+}
+.flags{  
+    transition: all .3s ease-in-out;
+}
+.flags:hover{
+    transform: scale(1.2);
+}
+#hamburger-menu{
+    text-align: center;  
+}
+.nav-link{
+    color: #000000;
+    padding-left: 30px;
+}
+.nav-item{
+    padding-left: 50px;
+}
+.menu_title{
+    padding-left: 40px;
+}
+.nav-link:hover{
+    color: #773e18;
+}
+#menu-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.align_center{
+    text-align: center;
+}
+.fa-chevron-down{
+text-decoration: none;
+color: #000000;
+}
+
+/* Changing the border and color of the hamburger menu */
+.custom-toggler.navbar-toggler {
+    border: none;
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 25 25' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(119, 62, 24)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.close_btn{
+    transition: all .3s ease-in-out;
+}
+.close_btn:hover{
+    transform: scale(1.2);
+}
+/*When the hamburger menu collapses, close button appears: changing its colors*/
+.navbar-toggler>.close {
+    display: inline;
+    color: #773e18;   
+}
+.navbar-toggler.collapsed>.close, .navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
+    display:none;
+}
+.navbar-collapse{
+    margin-top: auto;
+}
+.navbar-toggler-icon{
+    float: right;
+    transition: all .3s ease-in-out; 
+}
+.navbar-toggler-icon:hover{
+    transform: scale(1.2);
+}
+.navbar-toggler{
+    margin-top: -95px;
+}
+
+/* Top button */
+#return_top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background:#773e18;
+    width: 55px;
+    height: 55px;
+    display: none;
+    border-radius: 35px;
+    transition: all 0.3s ease;
+    opacity: 0.8;
+}
+.arrow_top{
+    color: #ffffff;
+    position: relative;
+    left: 15px;
+    top: 13px;
+    font-size: 28px;
+    transition: all 0.5s ease;
+}
+#return_top:hover {
+    background: #773e18;
+}
+.arrow_top:hover {
+    color: #ffffff;
+    top: 2px;
+}
+
+/* Header section */
+header{
+    background-color: #fee598;
+    padding: 100px;
+}
+#header_img{
+    width: 838px;
+}
+.header_text{
+    font-family: 'Fjalla One', sans-serif; 
+    text-align: center;
+    font-size: 72px;
+    margin-top: 5%;
+    color: #ffffff;
+    text-shadow: 5px 6px 4px #773e18;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #773e18;
+}
+.arrow_down {
+    white-space: nowrap;
+    font-size: 4rem;
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+    left: 0;
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    transform: translateY(0);
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 750ms ease-in-out;
+    -ms-transition: all 750ms ease-in-out;
+    -o-transition: all 750ms ease-in-out;
+    transition: all 750ms ease-in-out;
+  }
+
+  /* About section */
+  .about_text{
+      text-align: center;
+      font-size: 25px;  
+      margin-top: 3%;
+      margin-bottom: 5%;  
+  }
+  .responsive_img{
+    width: 100%;    
+  }
+
+  /* Features section */
+  .features_alignment{
+      text-align: center;
+  }
+  .main_titles{
+      font-family: 'Fjalla One', sans-serif;     
+  }
+  .separate_line{
+      width: 50%;
+  }
+.features_pharagraphs{
+    font-size: 25px;
+    text-align: center;
+  }
+/* this sets the position of the arrow when it's up, so it will move up or down by 14px when you add or remove this class */
+  .lift {
+    transform: translateY(14px);
+  }
+
+/* Tablet */
+.ipad_center{
+    width: 95%;
+    height: auto;    
+}
+.center-block{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.show_tablet{ 
+    width: 69%;
+    height: auto;
+    margin: 0 auto;
+    position: absolute;
+    top: 8%;
+    left: 0;
+    right: 0; 
+}
+.underneath_table{
+    text-align: center;
+    margin-top: -25px;
+}
+.icons_under_tablet{
+    display: inline;
+    list-style-type: none;
+    margin-top: 12px;
+}
+.tablet_icons {
+    font-size: 54px;
+    padding: 40px;
+    transition: all .3s ease-in-out;
+}
+.tablet_icons:hover{
+    transform: scale(1.3);
+}
+.tablet_extra_info{
+    text-align: center;
+    font-size: 30px;
+    margin-left: 25%;
+}
+.tablet_icons.active{
+    color: #773e18;
+}
+
+/* Extra information- collapsed */
+.features_explained{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.panel-heading:focus{
+    background-color: #fee598;
+}
+.panel-body{
+    background-color: #fee598;
+    font-size: 30px;
+    padding: 5%;
+}
+.panel-heading{
+    margin-left: 25%;
+}
+.features_titles_decoration:focus {
+    background-color: #fee598;
+    display: block;
+    margin-bottom: -3.8%;
+    padding: 2%;
+    text-align: center;
+    margin-left: -33.5%;
+    border: 1px solid #773e18;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+.features_titles_decoration{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-family: 'Fjalla One', sans-serif; 
+    font-weight: 100;
+}
+.features_titles_decoration:hover{
+    text-decoration: none;
+    color: #773e18;
+}
+.color{
+    color: #773e18;
+}
+
+/* Pricing */
+#pricing{
+    background-color: #fee598;
+    padding: 100px; 
+}
+.separate_line2{
+    width: 28%;
+}
+.pricing_pharagraph{
+    font-size: 20px;
+    margin-top: 5%;
+}
+.header_text2{
+    font-family: 'Fjalla One', sans-serif; 
+    text-align: center;
+    font-size: 70px;
+    margin-top: 5%;
+    color: #ffffff;
+    text-shadow: 5px 6px 4px #773e18;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #773e18;
+}
+
+/* Footer */
+footer{
+    text-align: center;
+    margin-top: 5%;
+    background-color: #fee598;
+}
+#logo2{
+    width: 50%;
+    margin-top: 10%;
+}
+.footer_pharagraph{
+    font-size: 30px;
+    margin-top: 7%;
+}
+.footer_titles{
+    font-family: 'Fjalla One', sans-serif; 
+    font-size: 36px;    
+}
+.footer_copyright{
+    font-size: 36px;
+    font-family: 'Fjalla One', sans-serif; 
+    font-weight: 600;
+    margin-top: 3%;
+}
+.text_soner{
+    font-size: 23px;
+    padding: 5%;
+}
+.img_soner{
+    width: 100%;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+}
+.about_soner{
+    background-color: #ffffff;
+    padding-bottom: 5%;
+}
+
+/* Contact form */
+input{
+    width: 50%;
+}
+.submit_btn{
+    background-color: #773e18;
+    color: #ffffff;
+    width: 38%;
+}
+
+/* Media queries */
+@media screen and (max-width: 1650px){
+    #header_img {
+        width: 600px;
+    }
+    .header_text{
+        font-size: 50px;
+    }
+    .tablet_extra_info{
+        margin-left: 18%;
+    }
+    .about_text {
+        padding: 10%;
+        margin-top: -10%;
+        margin-bottom: -5%;
+    }
+    .footer_pharagraph, .footer_titles{
+        font-size: 25px;
+    }
+}
+
+/* Laptop with HiDPI screen + others */
+@media screen and (max-width: 1440px){
+    .header_text{
+        margin-top: 7%;
+    }
+    .text_soner{
+        padding: 3%;
+    }   
+    .panel-body{
+        font-size: 25px;
+    } 
+}
+
+@media screen and (max-width: 1280px){
+    #logo{
+        width: 400px;
+    }
+    #header_img {
+        width: 500px;
+    }
+    .header_text {
+        font-size: 40px;
+        text-shadow: 5px 3px 6px #773e18;
+    }
+    .show_tablet {
+        width: 68%;
+    }
+    .tablet_icons {
+        font-size: 75px;
+        padding: 60px;
+    }
+    .tablet_extra_info {
+        margin-left: 8%;
+    }
+}
+
+@media screen and (max-width: 1200px){ 
+    #logo {
+        width: 250px;
+    }
+    #menu{
+        font-size: 30px;
+    }
+    header{
+        padding: 20px;
+    }
+    .main_titles{
+        font-size: 30px;
+    }
+    .header_text {
+        font-size: 37px;
+        margin-top: 8%;
+    }
+    .tablet_extra_info{
+        margin-left: 0;
+    }
+    .about_text, .features_pharagraphs, .panel-body,
+    .footer_pharagraph, .text_soner, .footer_titles{
+        font-size: 20px;
+    }
+    .separate_line {
+        width: 40%;
+    }
+    #logo2{
+        margin-top: 5%;
+    }
+    .tablet_icons {
+        padding: 0;
+        margin-top: 120%;
+        font-size: 50px;
+    }
+    #header_img {
+        width: 500px;
+    }
+
+}
+
+@media screen and (max-width: 1024px){
+    .text_soner{
+        font-size: 18px;
+    }
+    .footer_copyright{
+        font-size: 25px;
+    }
+    .features_titles_decoration:focus {
+        margin-left: -33.5%;
+        margin-bottom: -4.5%;
+      }
+      .header_text{
+        margin-top: 10%;
+      }
+}
+
+@media screen and (max-width: 992px){
+    #logo{
+        width: 220px;
+    }
+    .navbar-toggler {
+        margin-top: -75px;
+    }
+    .tablet_icons {
+        margin-top: 130%;
+        font-size: 40px;
+    }
+    #menu-wrapper{
+        margin-top: 2%;
+    }
+    .about_text, .pricing_pharagraph, .features_pharagraphs, .panel-body, .footer_pharagraph, .text_soner, .footer_titles {
+        font-size: 15px;
+    }
+    .features_titles_decoration{
+        font-size: 20px;
+    }
+    .panel-heading {
+        margin-left: 28%;
+    }
+    .features_titles_decoration:focus{
+        margin-left: -39%;  
+        margin-bottom: -4.75%;
+    }
+    .header_text2{
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 800px) {   
+    .header_text{
+        margin-top: 5%;
+        text-shadow: 4px 2px 7px #773e18;
+        font-size: 28px;        
+    }
+    #header_img {
+        width: 300px;
+    }
+    .tablet_icons {
+        margin-top: 150%;
+        font-size: 35px;
+    }
+    .text_soner{
+        font-size: 13px;
+    }
+    .features_titles_decoration:focus{
+        margin-bottom: -6.5%;
+    }
+    .header_text2{
+        text-shadow: 4px 2px 7px #773e18;
+    }
+}  
+
+@media screen and (max-width: 768px){
+    .about_text, .pricing_pharagraph, .features_pharagraphs, .panel-body, .footer_pharagraph, .text_soner, .footer_titles {
+        font-size: 12px;
+    }
+    .tablet_icons {
+        font-size: 35px;
+    }
+    .main_titles {
+        font-size: 20px;
+    }
+    .separate_line {
+        width: 25%;
+    }
+    .features_titles_decoration, .footer_copyright {
+        font-size: 15px;
+    }
+    .footer_copyright{
+        margin-top: 0;
+    }
+    .header_text2 {
+        font-size: 45px;
+    }
+}
+@media screen and (max-width: 766px){
+    .about_text, .pricing_pharagraph, .features_pharagraphs, .panel-body, .footer_pharagraph, .text_soner, .footer_titles {
+        font-size: 12px;
+    }
+    .header_align_center{
+        text-align: center; 
+    }
+    .tablet_icons {
+        margin-top: 40%;
+        font-size: 25px;
+    }
+    .show_tablet {
+        width: 67%;
+    }
+    .features_titles_decoration:focus{
+        margin-bottom: -8.8%;
+    }
+    #logo2{
+        width: 25%;
+    }
+    .header_text2 {
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 640px){
+    .header_align_center{
+        text-align: center;
+    }
+    #logo2 {
+        width: 25%;
+    }
+    .tablet_icons {
+        margin-top: 35%;
+        font-size: 30px;
+    }     
+}
+
+@media screen and (max-width: 576px){
+    .icons_under_tablet{
+        display: inline-flex;
+    }
+    .tablet_icons {
+        margin-right: 60px;
+    }  
+    .features_titles_decoration:focus{
+        margin-bottom: -8.5%;
+    } 
+    .header_text2 {
+        font-size: 37px;
+    }
+}   
+
+@media screen and (max-width: 535px){
+    #header_img {
+        margin-left: 13%;
+    }
+    
+    .separate_line2 {
+        width: 75%;
+    }
+    .features_titles_decoration:focus{
+        margin-bottom: -9%;
+    } 
+}
+
+@media screen and (max-width: 480px){
+    #header_img {
+        margin-left: 0%;
+    }
+    .tablet_icons {
+        font-size: 20px;
+        padding: 0;
+    }
+    html{
+        padding: 0;
+        margin: 0;
+    }
+    .features_titles_decoration{
+        text-align: left;
+    }
+    .features_titles_decoration:focus{
+        margin-bottom: -10%;
+    } 
+    
+}
+
+/* Nexus 6 smartphone, IPhone 6+, + others */
+@media screen and (max-width: 414px){
+    .panel-heading {
+        margin-left: 0%;
+    }
+    .features_titles_decoration:focus {
+        margin-bottom: 0;
+        text-align: none;
+        margin-left: 0;
+      }
+    #menu-wrapper{
+        margin-top: 5%;
+    }
+    #hamburger-menu{
+        margin-bottom: 10%;
+    }
+    #header_img {
+        margin-left: 2%;
+    }
+    #logo2 {
+        width: 35%;
+    }
+    .tablet_icons {
+        font-size: 20px;
+        margin-right: 45px;
+    }
+    .features_titles_decoration:focus{
+        margin-bottom: -8.5%;
+    } 
+}
+
+/* LG Optimus L70 smartphone + others */
+@media screen and (max-width: 384px){
+    #header_img {
+        margin-left: 0;
+    }
+    .tablet_icons{
+        margin-right: 38px;
+    }
+    .nav-item {
+        padding-left: 0; 
+    }
+    .features_titles_decoration:focus{
+        margin-bottom: -9%;
+    } 
+    .header_text2 {
+        font-size: 30px;
+    }
+}
+
+/* Blackberry smartphone + others */
+@media screen and (max-width: 360px){
+    .header_text {
+        font-size: 28px;
+    }
+    #header_img {
+        width: 270px;
+    }
+    #pricing{
+        padding: 35px;
+    }
+}
+
+/* Nokia Lumia 520, IPhone4 smartphone + others */
+@media screen and (max-width: 320px){
+    #logo {
+        width: 180px;
+    }
+    #menu-wrapper {
+        margin-top: 8%;
+    }
+    header {
+        padding: 0;
+    }
+    .header_text {
+        font-size: 25px;
+    }
+    .show_tablet {
+        width: 64%;
+    }
+    
+    .tablet_icons{
+        margin-right: 26px;
+        font-size: 18px;        
+    }    
+    .features_titles_decoration:focus {
+        margin-bottom: -11%;
+      }
+}
